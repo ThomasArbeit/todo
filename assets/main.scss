@@ -1,0 +1,24 @@
+@import url(./Navlink.scss);
+@import url(./Navbar.scss);
+@import url(./Page.scss);
+@import url(./Input.scss);
+@import url(./layout.default.scss);
+
+* {
+ padding: unset;
+ margin: unset;
+ box-sizing: border-box;
+ font-family: 'Inter';
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.main {
+  min-height: 100vh;
+  background: #FF8A91;
+}

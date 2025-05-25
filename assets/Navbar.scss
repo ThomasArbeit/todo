@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+
+  small {
+    margin-left: 1.5rem;
+    color: rgba(0,0,0,.4);
+    font-weight: 500;
+  }
+}

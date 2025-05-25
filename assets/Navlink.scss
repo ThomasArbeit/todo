@@ -1,0 +1,20 @@
+.nav-link {
+  display: flex;
+  text-decoration: unset;
+  color: black;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  cursor: unset;
+  padding: 0.75rem 1.5rem;
+  border-radius: .75rem;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover:not(.nav-link--isactive) {
+    background: rgba(255,255,255,.2);
+  }
+
+  &--isactive {
+    background: rgba(255,255,255,.8);
+  }
+}
