@@ -9,15 +9,15 @@ export function useNavbar () {
           to: '/',
         },
         {
+          label: 'Notes',
+          to: '/todo',
+        },
+        {
           label: 'Habitudes',
           to: '/todo',
         },
         {
           label: 'Calendrier',
-          to: '/todo',
-        },
-        {
-          label: 'Notes',
           to: '/todo',
         },
         {

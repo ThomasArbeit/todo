@@ -2,6 +2,8 @@
 @import url(./Navbar.scss);
 @import url(./Page.scss);
 @import url(./Input.scss);
+@import url(./TodoItem.scss);
+@import url(./TodoItemSkeleton.scss);
 @import url(./layout.default.scss);
 
 * {
@@ -9,16 +11,24 @@
  margin: unset;
  box-sizing: border-box;
  font-family: 'Inter';
+ color: hsl(257, 14%, 90%);
 }
 
 h1 {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .main {
   min-height: 100vh;
-  background: #FF8A91;
+  background: hsl(0, 0%, 13%);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: .75rem;
 }

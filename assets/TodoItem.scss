@@ -1,0 +1,77 @@
+.todo-item {
+  padding: 0 .75rem;
+  display: flex;
+  align-items: center;
+  border-radius: .75rem;
+  flex: 1;
+  width: 100%;
+
+  &:hover {
+    background: hsl(0, 0%, 14%);
+    .todo-item__actions {
+      display: block;
+    }
+  }
+  &:focus-within {
+    background: hsl(0, 0%, 13%);
+  }
+
+  &--completed {
+    .todo-item__content {
+      input {
+        color: hsl(260, 3%, 42%);
+        text-decoration: line-through;
+      }
+    }
+    .todo-item__circle {
+      background-color: rgb(26, 175, 26);
+      border: unset;
+
+      &:hover {
+        background-color: rgb(13, 209, 13);
+      }
+    }
+  }
+
+  &__circle {
+    border-radius: 50%;
+    border: 1px solid hsl(257, 14%, 90%);
+    height: 1.25rem;
+    width: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+
+    &:hover {
+      background: rgba(0,0,0,.08);
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(.85);
+    }
+  }
+
+
+  &__content {
+    font-size: .875rem;
+    line-height: 1rem;
+    color: black;
+    flex: 1;
+    transition: all .2s;
+  }
+
+  &__actions {
+    display: none;
+    
+    & > * {
+      color: grey;
+      cursor: pointer;
+    }
+
+    .lucide-trash2-icon:hover {
+      color: red;
+    }
+  }
+}

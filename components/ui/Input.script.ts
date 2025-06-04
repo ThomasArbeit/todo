@@ -5,10 +5,12 @@ export type InputProps = {
   label?: string,
   placeholder?: string,
   type: InputTypeHTMLAttribute,
+  variant?: string,
 }
 
 export type InputEmit = {
   (e: 'update:modelValue', value: string): void,
+  (e: 'enter'): void,
 }
 
 export function useInput (

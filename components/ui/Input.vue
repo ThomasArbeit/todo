@@ -1,11 +1,12 @@
 <template>
-  <div class="input">
+  <div :class="['input', `input--${props.variant}`]">
     <label v-if="props.label">{{ props.label }}</label>
     <input
       :type="props.type"
       :placeholder="props.placeholder"
       v-model="props.modelValue"
       @input="setup.onInput"
+      @keyup.enter="$emit('enter')"
     />
   </div>
 </template>

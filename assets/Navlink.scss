@@ -1,7 +1,7 @@
 .nav-link {
   display: flex;
   text-decoration: unset;
-  color: black;
+  // color: black;
   font-size: 0.875rem;
   line-height: 1rem;
   cursor: unset;
@@ -16,5 +16,6 @@
 
   &--isactive {
     background: rgba(255,255,255,.8);
+    color: hsl(257, 14%, 8%);
   }
 }
