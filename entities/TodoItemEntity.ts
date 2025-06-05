@@ -1,6 +1,7 @@
 import type { TodoItemProps } from "~/components/ui/TodoItem.script";
 import { useTodoService } from "~/composables/services/TodoService";
-import {debounce} from 'lodash';
+import _ from 'lodash';
+const {debounce} = _;
 
 export class TodoItemEntity {
   id: string;
